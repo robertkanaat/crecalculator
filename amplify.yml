@@ -1,0 +1,16 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci                    # consistent installs
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: dist           # ← tells Amplify: "use Vite's output folder"
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
