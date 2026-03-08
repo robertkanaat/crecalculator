@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback, memo } from "react";
 
-// ─── CONSTANTS ──────────────────────────────────────────────────────────────
+import React from 'react';
+
 const C = {
   bg: "#0a0e17", card: "#111827", border: "#1e293b",
   accent: "#c9a55a", accentDim: "#a8873d", accentGlow: "rgba(201,165,90,0.15)",
